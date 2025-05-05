@@ -16,15 +16,15 @@ const DefaultSeo = () => {
     <NextSeo
       title={
         globalSetting?.meta_title ||
-        "KachaBazar - React Grocery & Organic Food Store e-commerce Template"
+        "Sholok - Best E-commerce Website in Bangladesh"
       }
       openGraph={{
         type: "website",
         locale: "en_IE",
-        url: globalSetting?.meta_url || "https://kachabazar-store.vercel.app/",
+        url: globalSetting?.meta_url || "https://sholok.com/",
         site_name:
           globalSetting?.meta_title ||
-          "KachaBazar - React Grocery & Organic Food Store e-commerce Template",
+          "Sholok - Best E-commerce Website in Bangladesh",
       }}
       twitter={{
         handle: "@handle",

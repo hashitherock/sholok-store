@@ -286,7 +286,7 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
                       />
                     ) : (
                       <Image
-                        src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
+                        src="https://res.cloudinary.com/sholok/image/upload/v1719212894/placeholder_mugpwt.png"
                         width={650}
                         height={650}
                         alt="product Image"
@@ -353,35 +353,46 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
                         </div>
 
                         <div>
-                          <div className="text-sm leading-6 text-gray-500 md:leading-7">
-                            {isReadMore
-                              ? showingTranslateValue(
-                                  product?.description
-                                )?.slice(0, 230)
-                              : showingTranslateValue(product?.description)}
-                            <br />
-                            {Object?.keys(product?.description)?.includes(lang)
-                              ? product?.description[lang]?.length > 230 && (
-                                  <span
-                                    onClick={() => setIsReadMore(!isReadMore)}
-                                    className="read-or-hide"
-                                  >
-                                    {isReadMore
-                                      ? t("common:moreInfo")
-                                      : t("common:showLess")}
-                                  </span>
-                                )
-                              : product?.description?.en?.length > 230 && (
-                                  <span
-                                    onClick={() => setIsReadMore(!isReadMore)}
-                                    className="read-or-hide"
-                                  >
-                                    {isReadMore
-                                      ? t("common:moreInfo")
-                                      : t("common:showLess")}
-                                  </span>
-                                )}
-                          </div>
+                          {/* Add By Hashi                          
+                          {product.description ? (
+                            <div>Hashi</div>
+                          ) : (
+                            <div>Hasina</div>
+                          )} */}
+                          {/* Add By Hashi {product.description ? ( */}
+                          {product.description ? (
+                            <div className="text-sm leading-6 text-gray-500 md:leading-7">
+                              {isReadMore
+                                ? showingTranslateValue(
+                                    product?.description
+                                  )?.slice(0, 230)
+                                : showingTranslateValue(product?.description)}
+                              <br />                              
+                              {Object?.keys(product?.description)?.includes(lang)
+                                ? product?.description[lang]?.length > 230 && (
+                                    <span
+                                      onClick={() => setIsReadMore(!isReadMore)}
+                                      className="read-or-hide"
+                                    >
+                                      {isReadMore
+                                        ? t("common:moreInfo")
+                                        : t("common:showLess")}
+                                    </span>
+                                  )
+                                : product?.description?.en?.length > 230 && (
+                                    <span
+                                      onClick={() => setIsReadMore(!isReadMore)}
+                                      className="read-or-hide"
+                                    >
+                                      {isReadMore
+                                        ? t("common:moreInfo")
+                                        : t("common:showLess")}
+                                    </span>
+                                  )}
+                            </div>
+                          ) : (
+                            <div></div>
+                          )}
 
                           <div className="flex items-center mt-4">
                             <div className="flex items-center justify-between space-s-3 sm:space-s-4 w-full">
@@ -410,7 +421,7 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
                               </div>
                               <button
                                 onClick={() => handleAddToCart(product)}
-                                className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none text-white px-4 ml-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 hover:text-white bg-emerald-500 hover:bg-emerald-600 w-full h-12"
+                                className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none text-white px-4 ml-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 hover:text-white bg-red-600 hover:bg-red-700 w-full h-12"
                               >
                                 {t("common:addToCart")}
                               </button>
@@ -440,9 +451,11 @@ const ProductScreen = ({ product, attributes, relatedProducts }) => {
                           <div className="mt-8">
                             <p className="text-xs sm:text-sm text-gray-700 font-medium">
                               Call Us To Order By Mobile Number :{" "}
-                              <span className="text-emerald-700 font-semibold">
-                                +0044235234
-                              </span>{" "}
+                              <a href="tel:+8801716509407">                              
+                                <span className="text-red-500 hover:text-red-700 font-semibold">
+                                +88 01716 509407
+                                </span>{" "}
+                              </a>
                             </p>
                           </div>
 

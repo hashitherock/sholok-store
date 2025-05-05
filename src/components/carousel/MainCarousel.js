@@ -67,7 +67,8 @@ const MainCarousel = () => {
         showingImage(storeCustomizationSetting?.slider?.third_img) ||
         "/slider/slider-3.jpg",
     },
-    {
+    // Add By Hashi Commented id 4 and id 5
+    /* {
       id: 4,
       title: showingTranslateValue(
         storeCustomizationSetting?.slider?.four_title
@@ -98,7 +99,7 @@ const MainCarousel = () => {
       image:
         showingImage(storeCustomizationSetting?.slider?.five_img) ||
         "/slider/slider-2.jpg",
-    },
+    }, */
   ];
 
   return (

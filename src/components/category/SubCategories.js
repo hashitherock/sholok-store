@@ -11,7 +11,7 @@ import CMSkeleton from "@components/preloader/CMSkeleton";
 import { SidebarContext } from "@context/SidebarContext";
 import useUtilsFunction from "@hooks/useUtilsFunction";
 
-const FeatureCategory = () => {
+const SubCategory = () => {
   const router = useRouter();
   const { isLoading, setIsLoading } = useContext(SidebarContext);
   const { showingTranslateValue } = useUtilsFunction();
@@ -102,4 +102,4 @@ const FeatureCategory = () => {
   );
 };
 
-export default FeatureCategory;
+export default SubCategory;

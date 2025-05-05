@@ -48,7 +48,7 @@ const FooterTop = () => {
                 data={storeCustomizationSetting?.home?.daily_need_description}
               />
             </p>
-            <div className="mt-8 flex">
+            <div className="mt-8 flex invisible"> {/* Add By Hashi invisible */}
               <Link
                 href={`${storeCustomizationSetting?.home?.daily_need_app_link}`}
                 className="mx-2"

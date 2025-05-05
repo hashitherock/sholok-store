@@ -5,6 +5,18 @@
 [type="radio"]:checked {
   background-image: none;
 }
+/* Add By Hashi Start */
+.color-red {
+  color: rgb(217, 7, 0);
+}
+.background-red {
+  background: rgb(217, 7, 0);
+}
+.img-h-40 {
+  height: 40px !important;
+}
+/* Add By Hashi End */
+
 .StripeElement {
   box-sizing: border-box;
   height: 50px;

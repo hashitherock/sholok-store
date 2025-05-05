@@ -63,13 +63,13 @@ const CategoryCard = ({ title, icon, nested, id }) => {
           <Image src={icon} width={18} height={18} alt="Category" />
         ) : (
           <Image
-            src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
+            src="https://res.cloudinary.com/sholok/image/upload/v1719212894/placeholder_mugpwt.png"
             width={18}
             height={18}
             alt="category"
           />
         )}
-
+        
         <div className="inline-flex items-center justify-between ml-3 text-sm font-medium w-full hover:text-emerald-600">
           {title}
           {nested?.length > 0 && (

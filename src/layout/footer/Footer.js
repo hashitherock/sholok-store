@@ -455,12 +455,12 @@ const Footer = () => {
         <p className="text-sm text-gray-500 leading-6">
           Copyright 2024 @{" "}
           <Link
-            href="https://themeforest.net/user/htmllover"
+            href="https://sholok.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-emerald-500"
           >
-            HtmlLover
+            Sholok
           </Link>
           , All rights reserved.
         </p>

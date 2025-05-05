@@ -233,14 +233,14 @@ const ProductModal = ({
                     src={img || product.image[0]}
                     width={420}
                     height={420}
-                    alt="product"
+                    alt="Product Image"
                   />
                 ) : (
                   <Image
                     src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
                     width={420}
                     height={420}
-                    alt="product Image"
+                    alt="Product Image"
                   />
                 )}
               </div>
@@ -329,7 +329,7 @@ const ProductModal = ({
                   <button
                     onClick={() => handleAddToCart(product)}
                     disabled={product.quantity < 1}
-                    className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none text-white px-4 ml-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 hover:text-white bg-emerald-500 hover:bg-emerald-600 w-full h-12"
+                    className="text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-serif text-center justify-center border-0 border-transparent rounded-md focus-visible:outline-none focus:outline-none text-white px-4 ml-4 md:px-6 lg:px-8 py-4 md:py-3.5 lg:py-4 hover:text-white bg-red-600 hover:bg-red-700 w-full h-12"
                   >
                     {t("common:addToCart")}
                   </button>
@@ -355,25 +355,28 @@ const ProductModal = ({
                       </Link>
                     </span>
 
-                    <Tags product={product} />
+                    {/* <Tags product={product} /> */} {/* Add By Hashi */}
                   </div>
 
-                  <div>
-                    <button
-                      onClick={() => handleMoreInfo(product.slug)}
-                      className="font-sans font-medium text-sm text-orange-500"
-                    >
-                      {t("common:moreInfo")}
-                    </button>
-                  </div>
+                  
                 </div>
               </div>
+              <div className="flex justify-end mt-4">
+                  <button
+                    onClick={() => handleMoreInfo(product.slug)}
+                    className="font-sans font-medium text-sm text-orange-500"
+                  >
+                    {t("common:moreInfo")}
+                  </button>
+                </div>
               <div className="flex justify-end mt-2">
                 <p className="text-xs sm:text-sm text-gray-600">
                   Call Us To Order By Mobile Number :{" "}
-                  <span className="text-emerald-700 font-semibold">
-                    +0044235234
-                  </span>{" "}
+                  <a href="tel:+8801716509407">                              
+                    <span className="text-red-500 hover:text-red-700 font-semibold">
+                    +88 01716 509407
+                    </span>{" "}
+                  </a>
                 </p>
               </div>
             </div>

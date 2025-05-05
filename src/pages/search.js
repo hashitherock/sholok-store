@@ -9,6 +9,7 @@ import Card from "@components/cta-card/Card";
 import ProductServices from "@services/ProductServices";
 import ProductCard from "@components/product/ProductCard";
 import CategoryCarousel from "@components/carousel/CategoryCarousel";
+import SubCategory from "@components/category/SubCategories";
 import { SidebarContext } from "@context/SidebarContext";
 import Loading from "@components/preloader/Loading";
 import AttributeServices from "@services/AttributeServices";
@@ -35,6 +36,9 @@ const Search = ({ products, attributes }) => {
               </div>
               <div className="relative">
                 <CategoryCarousel />
+              </div>
+              <div className="relative">
+                <SubCategory />
               </div>
               {productData?.length === 0 ? (
                 <div className="mx-auto p-5 my-5">

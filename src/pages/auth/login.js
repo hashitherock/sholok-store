@@ -32,7 +32,7 @@ const Login = () => {
                     <div className="form-group">
                       <InputArea
                         register={register}
-                        defaultValue="justin@gmail.com"
+                        defaultValue="your-email@gmail.com"
                         label="Email"
                         name="email"
                         type="email"
